@@ -1,0 +1,17 @@
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.csproj.AssemblyReference.cache
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.AssemblyInfoInputs.cache
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.AssemblyInfo.cs
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.csproj.CoreCompileInputs.cache
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Services.deps.json
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Services.dll
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Services.pdb
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Db.dll
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Repos.dll
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Repos.pdb
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\bin\Debug\net6.0\DatabaseTask.Db.pdb
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.csproj.CopyComplete
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.dll
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\refint\DatabaseTask.Services.dll
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\DatabaseTask.Services.pdb
+C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Services\obj\Debug\net6.0\ref\DatabaseTask.Services.dll
