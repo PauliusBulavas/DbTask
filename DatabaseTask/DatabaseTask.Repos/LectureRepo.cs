@@ -1,17 +1,16 @@
 ﻿using DatabaseTask.Db;
 using DatabaseTask.Db.Entities;
 using DatabaseTask.Repos.Base;
-using DatabaseTask.Repos.IRepos;
+using DatabaseTask.Repos.Base.IBase;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseTask.Repos;
 
-public class LectureRepo : BaseRepo<LectureDbo>, ILectureRepo
+public class LectureRepo : BaseRepo<LectureDbo>, IBaseRepo<LectureDbo>
 {
-    public LectureRepo(DatabaseTaskContext context) : base(context)
-    {
-    }
+    public LectureRepo(DatabaseTaskContext context) : base(context) { }
 
-    public LectureDbo GetWithDepartments(int id) =>
-        _context.Lectures.Include(l => l.Departments).FirstOrDefault(d => d.Id == id);
+    public override LectureDbo GetById(int id) =>
+        _context.Lectures.Include(l => l.Departments).FirstOrDefault(d => d.Id == id) ??
+        throw new InvalidOperationException($"{nameof(_context.Lectures)} was null");
 }

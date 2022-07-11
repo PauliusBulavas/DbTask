@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V+voTMdTIoBA03vtAUIJJD7IS2KYC2zKtkA4e0He4+dvfIf5OkaRfb3fknDMtxIwHEn6J6Bt15j9xAeWgOfEVw==",
+  "dgSpecHash": "6JsDAgrUow5Mzn90/R6H0oIt5ybPl2jnQYDVE7M/UfDBVL3mTHYRCreE6ziTkrKmu2oeLSrGsuGfHyMZGEFUaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pauli\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

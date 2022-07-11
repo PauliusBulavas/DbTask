@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
+      "projectUniqueName": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
       "projectName": "DatabaseTask.Db",
-      "projectPath": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
+      "projectPath": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask.Db\\DatabaseTask.Db.csproj",
       "packagesPath": "C:\\Users\\pauli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask.Db\\obj\\",
+      "outputPath": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask.Db\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,5 +1,4 @@
-﻿using DatabaseTask.Db;
-using DatabaseTask.Db.Entities;
+﻿using DatabaseTask.Db.Entities;
 using DatabaseTask.Repos.Base.IBase;
 using DatabaseTask.Services.Base.IBase;
 
@@ -13,13 +12,11 @@ public class BaseService<T> : IBaseService<T> where T : BaseEntity
     // {
     //     _repo = repo;
     // }
-    
+
     internal readonly IBaseRepo<T> _repo;
 
-    protected BaseService(IBaseRepo<T> repo)
-    {
+    public BaseService(IBaseRepo<T> repo) =>
         _repo = repo;
-    }
 
     public virtual IEnumerable<T> GetAll() =>
         _repo.GetAll();
@@ -29,5 +26,11 @@ public class BaseService<T> : IBaseService<T> where T : BaseEntity
 
     public void Delete(int id) =>
         _repo.Delete(id);
-
+    
+    public virtual T Create(T entity)
+    {
+        _repo.Add(entity);
+        _repo.SaveChanges();
+        return entity;
+    }
 }

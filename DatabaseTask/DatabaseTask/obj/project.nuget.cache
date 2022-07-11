@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jrH+RMAgygZERPaoBVWpgGlCKlN2ybgn4gJEIA4KyCXC8AdW3THvB3QjXqh8ZL75VkybgY0V6GqYqqi7Z/XG8w==",
+  "dgSpecHash": "0E7XAp6K8R4owwfg24R9NwhDzJca25Q+etHFFVr5//TINoBjrRIC++Ol2pAjRxT1CrCYqMUNp22wtVjzgHz32g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask\\DatabaseTask.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask\\DatabaseTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

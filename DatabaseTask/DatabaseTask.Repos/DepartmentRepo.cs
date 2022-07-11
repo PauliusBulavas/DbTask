@@ -1,25 +1,22 @@
 ﻿using DatabaseTask.Db;
 using DatabaseTask.Db.Entities;
 using DatabaseTask.Repos.Base;
-using DatabaseTask.Repos.IRepos;
+using DatabaseTask.Repos.Base.IBase;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseTask.Repos;
 
-public class DepartmentRepo : BaseRepo<DepartmentDbo>, IDepartmentRepo
+public class DepartmentRepo : BaseRepo<DepartmentDbo>, IBaseRepo<DepartmentDbo>
 {
-    public DepartmentRepo(DatabaseTaskContext context) : base(context)
-    {
-    }
+    public DepartmentRepo(DatabaseTaskContext context) : base(context) { }
 
-    public DepartmentDbo GetWithStudentsLectures(int id) => _context.Departments
+    public override DepartmentDbo GetById(int id) => _context.Departments
         .Include(d => d.Lectures)
         .Include(d => d.Students)
-        .FirstOrDefault(d => d.Id == id);
+        .FirstOrDefault(d => d.Id == id) ?? throw new ArgumentNullException($"{nameof(_context.Departments)} was null");
 
-    public IEnumerable<DepartmentDbo> GetAllDepartmentsAndLectures() =>
-        _context.Departments.Include(d => d.Lectures);
-
-    public IQueryable<DepartmentDbo> GetAllDepartments()
-        => _context.Departments.Select(x => x);
+    public override IEnumerable<DepartmentDbo> GetAll() =>
+        _context.Departments
+            .Include(d => d.Lectures)
+            .Include(d => d.Students);
 }

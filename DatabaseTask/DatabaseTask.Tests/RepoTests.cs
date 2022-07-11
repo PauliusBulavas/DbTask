@@ -37,7 +37,7 @@ public class RepoTests
         mockContext.Setup(c => c.Departments).Returns(mockSet.Object);
 
         var service = new DepartmentRepo(mockContext.Object);
-        var departments = service.GetAllDepartments().ToList();
+        var departments = service.GetAll().ToList();
 
 
         Assert.Equal(3, departments.Count);
@@ -90,7 +90,7 @@ public class RepoTests
         mockContext.Setup(c => c.Departments).Returns(mockSet.Object);
 
         var service = new DepartmentRepo(mockContext.Object);
-        var departments = service.GetAllDepartmentsAndLectures().ToList();
+        var departments = service.GetAll().ToList();
 
         Assert.Equal(3, departments.Count);
         Assert.Equal("AAA", departments[0].Name);
@@ -168,7 +168,7 @@ public class RepoTests
         mockContext.Setup(c => c.Departments).Returns(mockSet.Object);
 
         var service = new DepartmentRepo(mockContext.Object);
-        var department = service.GetWithStudentsLectures(0);
+        var department = service.GetById(0);
 
         Assert.Equal("AAA", department.Name);
         Assert.Equal(lectureList, department.Lectures);
@@ -219,7 +219,7 @@ public class RepoTests
         mockContext.Setup(c => c.Lectures).Returns(mockSet.Object);
 
         var service = new LectureRepo(mockContext.Object);
-        var lecture = service.GetWithDepartments(0);
+        var lecture = service.GetById(0);
 
         Assert.Equal("AAA", lecture.Name);
         Assert.Equal(departmentList, lecture.Departments);
@@ -265,7 +265,7 @@ public class RepoTests
         mockContext.Setup(c => c.Students).Returns(mockSet.Object);
 
         var service = new StudentRepo(mockContext.Object);
-        var student = service.GetWithDepartment(0);
+        var student = service.GetById(0);
 
         Assert.Equal("AAA", student.Name);
         Assert.Equal("BBB", student.LastName);
@@ -313,7 +313,7 @@ public class RepoTests
         mockContext.Setup(c => c.Students).Returns(mockSet.Object);
 
         var service = new StudentRepo(mockContext.Object);
-        var students = service.GetAllStudentsAndDepartments().ToList();
+        var students = service.GetAll().ToList();
 
         Assert.Equal(3, students.Count);
         Assert.Equal("a", students[0].Name);

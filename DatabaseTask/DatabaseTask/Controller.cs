@@ -47,11 +47,12 @@ public class Controller
     {
         PrintStudents();
         Console.WriteLine("id to remove");
-        var student = int.Parse(Console.ReadLine());
-        
+        int.TryParse(Console.ReadLine(), out var student);
+
         _student.Delete(student);
         _department.Save();
     }
+
     public void PrintStudents()
     {
         var students = _student.GetAll().ToList();
@@ -108,12 +109,12 @@ public class Controller
 
         PrintStudents();
         Console.WriteLine("assign student to created department");
-        var student = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var student);
         AssignStudentToDepartment(newDepartment.Id, student);
 
         PrintLectures();
         Console.WriteLine("assign lecture to created department");
-        var lecture = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var lecture);
         AssignLectureToDepartment(newDepartment.Id, lecture);
     }
 
@@ -125,12 +126,12 @@ public class Controller
 
         PrintStudents();
         Console.WriteLine("assign student to created department");
-        var student = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var student);
         AssignStudentToDepartment(id, student);
 
         PrintLectures();
         Console.WriteLine("assign lecture to created department");
-        var lecture = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var lecture);
         AssignLectureToDepartment(id, lecture);
     }
 
@@ -142,7 +143,7 @@ public class Controller
 
         PrintDepartments();
         Console.WriteLine("select department id to add lecture to");
-        var department = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var department);
 
         AssignLectureToDepartment(department, newLecture.Id);
     }
@@ -156,7 +157,7 @@ public class Controller
 
         PrintDepartments();
         Console.WriteLine("select department id to add student to");
-        var department = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var department);
 
         AssignStudentToDepartment(department, newStudent.Id);
     }
@@ -165,11 +166,11 @@ public class Controller
     {
         PrintDepartments();
         Console.WriteLine("select department id to add student to");
-        var department = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var department);
 
         PrintStudents();
         Console.WriteLine("choose student to assign to department");
-        var student = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var student);
         AssignStudentToDepartment(department, student);
     }
 
@@ -177,7 +178,7 @@ public class Controller
     {
         PrintDepartments();
         Console.WriteLine("choose department from which to print students ");
-        var department = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var department);
 
         PrintAllStudentsInDepartment(department);
     }
@@ -186,7 +187,7 @@ public class Controller
     {
         PrintDepartments();
         Console.WriteLine("choose department from which to print lectures ");
-        var department = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var department);
 
         PrintAllLecturesInDepartment(department);
     }
@@ -195,9 +196,9 @@ public class Controller
     {
         PrintStudents();
         Console.WriteLine("choose student for which to print lectures ");
-        var student = int.Parse(Console.ReadLine());
+        int.TryParse(Console.ReadLine(), out var student);
 
-        PrintAllLecturesForStudent(1);
+        PrintAllLecturesForStudent(student);
     }
 
     public void Menu()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NzmUQke8LCFbQokYUSZ5TWMVQQ6lll5SRMcfsmZFujSbWHFDKA66+Q7CDagSaWw1yDX94OJjYwNFz1HCcMivRw==",
+  "dgSpecHash": "pOlYMTpe9BKEwesYX/RoN3NlB+uNgGEhNdtPpU5uomvzLpLTX9ATkmYGN/W81M3d1mnZRECuDMK/RWi4wBePrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\CA.NET1\\DatabaseTask\\DatabaseTask.Tests\\DatabaseTask.Tests.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\Documents\\GitHub\\DbTask\\DatabaseTask\\DatabaseTask.Tests\\DatabaseTask.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pauli\\.nuget\\packages\\castle.core\\5.0.0\\castle.core.5.0.0.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

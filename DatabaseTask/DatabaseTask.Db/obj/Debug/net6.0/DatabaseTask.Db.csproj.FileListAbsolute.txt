@@ -12,3 +12,17 @@ C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Db\obj\Debug\n
 C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.pdb
 C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.genruntimeconfig.cache
 C:\Users\pauli\Documents\GitHub\CA.NET1\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\ref\DatabaseTask.Db.dll
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\bin\Debug\net6.0\DatabaseTask.Db.deps.json
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\bin\Debug\net6.0\DatabaseTask.Db.runtimeconfig.json
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\bin\Debug\net6.0\DatabaseTask.Db.dll
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\bin\Debug\net6.0\DatabaseTask.Db.pdb
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.csproj.AssemblyReference.cache
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.AssemblyInfoInputs.cache
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.AssemblyInfo.cs
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.csproj.CoreCompileInputs.cache
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.dll
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\refint\DatabaseTask.Db.dll
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.pdb
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\DatabaseTask.Db.genruntimeconfig.cache
+C:\Users\pauli\Documents\GitHub\DbTask\DatabaseTask\DatabaseTask.Db\obj\Debug\net6.0\ref\DatabaseTask.Db.dll

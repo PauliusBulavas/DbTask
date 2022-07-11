@@ -8,10 +8,9 @@ public class BaseRepo<T> : IBaseRepo<T> where T : BaseEntity
 {
     internal readonly DatabaseTaskContext _context;
 
-    protected BaseRepo(DatabaseTaskContext context)
-    {
+    protected BaseRepo(DatabaseTaskContext context) =>
         _context = context;
-    }
+
 
     public virtual void Delete(int id)
     {
@@ -23,7 +22,7 @@ public class BaseRepo<T> : IBaseRepo<T> where T : BaseEntity
         _context.Set<T>().Add(entity);
 
     public virtual T GetById(int id) =>
-        _context.Set<T>().Find(id);
+        _context.Set<T>().Find(id) ?? throw new ArgumentNullException($"{typeof(T)} was null");
 
     public virtual IEnumerable<T> GetAll() =>
         _context.Set<T>().Select(x => x);
