@@ -19,7 +19,7 @@ public class Controller
 
     }
 
-    public void AssignStudentToDepartment(int departmentId, int studentId)
+    private void AssignStudentToDepartment(int departmentId, int studentId)
     {
         var student = _student.GetStudentById(studentId);
 
@@ -31,7 +31,7 @@ public class Controller
         _department.Save();
     }
 
-    public void AssignLectureToDepartment(int departmentId, int lectureId)
+    private void AssignLectureToDepartment(int departmentId, int lectureId)
     {
         var lecture = _lecture.GetWithDepartments(lectureId);
 
@@ -75,26 +75,26 @@ public class Controller
 
 
 
-    public void PrintStudents()
+    private void PrintStudents()
     {
         var students = _student.GetAll().ToList();
 
         students.ForEach(x => Console.WriteLine($"ID: {x.Id} -- FullName: {x.Name} {x.LastName} "));
     }
 
-    public void PrintLectures()
+    private void PrintLectures()
     {
         var lectures = _lecture.GetAll().ToList();
         lectures.ForEach(x => Console.WriteLine($"ID: {x.Id} -- Name: {x.Name}"));
     }
 
-    public void PrintDepartments()
+    private void PrintDepartments()
     {
         var departments = _department.GetAll().ToList();
         departments.ForEach(x => Console.WriteLine($"ID: {x.Id} -- Name: {x.Name}"));
     }
 
-    public void PrintAllLecturesInDepartment(int id)
+    private void PrintAllLecturesInDepartment(int id)
     {
         var department = _department.GetAllById(id);
 
@@ -102,7 +102,7 @@ public class Controller
         department.Lectures.ForEach(x => Console.WriteLine($"ID: {x.Id} -- Name: {x.Name}"));
     }
 
-    public void PrintAllStudentsInDepartment(int id)
+    private void PrintAllStudentsInDepartment(int id)
     {
         var department = _department.GetAllById(id);
 
@@ -110,7 +110,7 @@ public class Controller
         department.Students.ForEach(x => Console.WriteLine($"ID: {x.Id} -- FullName: {x.Name} {x.LastName} "));
     }
 
-    public void PrintAllLecturesForStudent(int id)
+    private void PrintAllLecturesForStudent(int id)
     {
         var student = _student.GetStudentById(id);
         var departmentId = student.Department.Id;
@@ -123,7 +123,7 @@ public class Controller
 
     }
 
-    public void TaskOne()
+    private void TaskOne()
     {
         Console.WriteLine("insert department name:");
         var name = Console.ReadLine();
@@ -140,7 +140,7 @@ public class Controller
         AssignLectureToDepartment(newDepartment.Id, lecture);
     }
 
-    public void TaskTwo()
+    private void TaskTwo()
     {
         PrintDepartments();
         Console.WriteLine("select department id");
@@ -157,7 +157,7 @@ public class Controller
         AssignLectureToDepartment(id, lecture);
     }
 
-    public void TaskThree()
+    private void TaskThree()
     {
         Console.WriteLine("Insert lecture name:");
         var lecture = Console.ReadLine();
@@ -170,7 +170,7 @@ public class Controller
         AssignLectureToDepartment(department, newLecture.Id);
     }
 
-    public void TaskFour()
+    private void TaskFour()
     {
         Console.WriteLine("Insert student name and last name");
         var name = Console.ReadLine();
@@ -184,7 +184,7 @@ public class Controller
         AssignStudentToDepartment(department, newStudent.Id);
     }
 
-    public void TaskFive()
+    private void TaskFive()
     {
         PrintDepartments();
         Console.WriteLine("select department id to add student to");
@@ -196,7 +196,7 @@ public class Controller
         AssignStudentToDepartment(department, student);
     }
 
-    public void TaskSix()
+    private void TaskSix()
     {
         PrintDepartments();
         Console.WriteLine("choose department from which to print students ");
@@ -205,7 +205,7 @@ public class Controller
         PrintAllStudentsInDepartment(department);
     }
 
-    public void TaskSeven()
+    private void TaskSeven()
     {
         PrintDepartments();
         Console.WriteLine("choose department from which to print lectures ");
@@ -214,7 +214,7 @@ public class Controller
         PrintAllLecturesInDepartment(department);
     }
 
-    public void TaskEight()
+    private void TaskEight()
     {
         PrintStudents();
         Console.WriteLine("choose student for which to print lectures ");
@@ -226,74 +226,71 @@ public class Controller
 
     public void Menu()
     {
-        Console.WriteLine(
-            "[1] - create department, add students and lectures(bonus if lectures already exist in db)\n" +
-            "[2] - add students/lectures to existing department\n" +
-            "[3] - create lecture, add it to department\n" +
-            "[4] - create student, add it to existing department and assign him lectures\n" +
-            "[5] - move student to other department(lectures need to be moved also)\n" +
-            "[6] - print all students in department\n" +
-            "[7] - print all lectures in department\n" +
-            "[8] - print all lectures by student\n" +
-            "[9] - exit");
-
-        switch (int.Parse(Console.ReadLine()))
+        while (true)
         {
-            case 1:
-                TaskOne();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 2:
-                TaskTwo();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 3:
-                TaskThree();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 4:
-                TaskFour();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 5:
-                TaskFive();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 6:
-                TaskSix();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 7:
-                TaskSeven();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 8:
-                TaskEight();
-                Console.ReadLine();
-                Console.Clear();
-                Menu();
-                break;
-            case 9:
-                Environment.Exit(0);
-                break;
-            default:
-                Console.WriteLine("try again!");
-                break;
+            Console.WriteLine("[1] - create department, add students and lectures(bonus if lectures already exist in db)\n"
+                              + "[2] - add students/lectures to existing department\n"
+                              + "[3] - create lecture, add it to department\n"
+                              + "[4] - create student, add it to existing department and assign him lectures\n"
+                              + "[5] - move student to other department(lectures need to be moved also)\n"
+                              + "[6] - print all students in department\n"
+                              + "[7] - print all lectures in department\n"
+                              + "[8] - print all lectures by student\n"
+                              + "[9] - exit");
 
+            int.TryParse(Console.ReadLine(), out var selection);
+            
+            switch (selection)
+            {
+                case 1:
+                    TaskOne();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 2:
+                    TaskTwo();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 3:
+                    TaskThree();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 4:
+                    TaskFour();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 5:
+                    TaskFive();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 6:
+                    TaskSix();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 7:
+                    TaskSeven();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 8:
+                    TaskEight();
+                    Console.ReadLine();
+                    Console.Clear();
+                    continue;
+                case 9:
+                    Environment.Exit(0);
+                    break;
+                default:
+                    Console.Clear();
+                    Console.WriteLine("try again!");
+                    continue;
+            }
+            break;
         }
     }
 }
