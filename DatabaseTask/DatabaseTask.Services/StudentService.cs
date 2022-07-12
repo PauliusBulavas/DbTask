@@ -16,10 +16,10 @@ public class StudentService : IStudentService
     public StudentDbo GetStudentById(int id) =>
         _studentRepo.GetById(id);
 
-    public IEnumerable<StudentDbo> GetAll() => //base service has
+    public IEnumerable<StudentDbo> GetAll() =>
         _studentRepo.GetAll();
 
-    public void Delete(int id) => //base service has
+    public void Delete(int id) =>
         _studentRepo.Delete(id);
 
     public StudentDbo CreateStudent(string name, string lastName)
@@ -35,10 +35,4 @@ public class StudentService : IStudentService
 
         return student;
     }
-
-    public void Update(StudentDbo student) => //base service has
-        _studentRepo.Update(student);
-
-    public IEnumerable<StudentDbo> GetAllStudentsAndDepartments() =>
-        _studentRepo.GetAll();
 }

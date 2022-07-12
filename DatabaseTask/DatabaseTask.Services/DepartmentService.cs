@@ -12,7 +12,7 @@ public class DepartmentService : IDepartmentService
 
     public DepartmentService(DatabaseTaskContext context) =>
         _departmentRepo = new DepartmentRepo(context);
-    
+
     public DepartmentDbo GetDepartmentById(int id) =>
         _departmentRepo.GetById(id);
 
@@ -30,7 +30,7 @@ public class DepartmentService : IDepartmentService
 
     public void Update(DepartmentDbo department) =>
         _departmentRepo.Update(department);
-    
+
     public DepartmentDbo CreateDepartment(string name)
     {
         var department = new DepartmentDbo
@@ -42,7 +42,4 @@ public class DepartmentService : IDepartmentService
         _departmentRepo.SaveChanges();
         return department;
     }
-
-    public IEnumerable<DepartmentDbo> GetAllDepartmentsAndLectures() =>
-        _departmentRepo.GetAll();
 }

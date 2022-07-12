@@ -47,11 +47,33 @@ public class Controller
     {
         PrintStudents();
         Console.WriteLine("id to remove");
-        int.TryParse(Console.ReadLine(), out var student);
+        int.TryParse(Console.ReadLine(), out var id);
 
-        _student.Delete(student);
+        _student.Delete(id);
         _department.Save();
     }
+
+    public void DeleteLecture()
+    {
+        PrintLectures();
+        Console.WriteLine("id to remove");
+        int.TryParse(Console.ReadLine(), out var id);
+
+        _lecture.Delete(id);
+        _department.Save();
+    }
+
+    public void DeleteDepartment()
+    {
+        PrintDepartments();
+        Console.WriteLine("id to remove");
+        int.TryParse(Console.ReadLine(), out var id);
+
+        _department.Delete(id);
+        _department.Save();
+    }
+
+
 
     public void PrintStudents()
     {
@@ -200,6 +222,7 @@ public class Controller
 
         PrintAllLecturesForStudent(student);
     }
+
 
     public void Menu()
     {

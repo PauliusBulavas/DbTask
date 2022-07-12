@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseTask.Repos;
 
-public class StudentRepo : BaseRepo<StudentDbo>, IBaseRepo<StudentDbo>
+public class StudentRepo : BaseRepo<StudentDbo>
 {
     public StudentRepo(DatabaseTaskContext context) : base(context) { }
 

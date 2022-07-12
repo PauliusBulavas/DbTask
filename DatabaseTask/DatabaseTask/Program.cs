@@ -10,7 +10,9 @@ internal class Program
 
         var controller = new Controller(context);
 
-        //controller.DeleteStudent();
+        // controller.DeleteStudent();
+        // controller.DeleteDepartment();
+        // controller.DeleteLecture();
 
         controller.Menu();
     }

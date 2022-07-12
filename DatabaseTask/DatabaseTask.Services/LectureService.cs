@@ -13,7 +13,7 @@ public class LectureService : ILectureService
     public LectureService(DatabaseTaskContext context) =>
         _lectureRepo = new LectureRepo(context);
 
-    public IEnumerable<LectureDbo> GetAll() => //base service has
+    public IEnumerable<LectureDbo> GetAll() =>
         _lectureRepo.GetAll();
 
     public LectureDbo GetWithDepartments(int id) =>
